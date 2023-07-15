@@ -58,6 +58,8 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>
+                    <finalName>vectors</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
