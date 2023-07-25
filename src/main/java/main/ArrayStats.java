@@ -35,17 +35,16 @@ public class ArrayStats {
 
     @Param({ "64", "512", "4096", "32768", "262144", "2097152", "16777216", "134217728" })
     int arraySize;
-
+    
+    int eq = 0;
+    int gt = 0;
+    int lt = 0;
+    
     float[] a;
     float[] b;
-    float[] result;
     
     @Benchmark
     public void arrays() {
-        int eq = 0;
-        int gt = 0;
-        int lt = 0;
-        
         for (int i = 0; i < arraySize; i++) {
             if (a[i] == b[i]) {
                 eq++;
@@ -55,18 +54,10 @@ public class ArrayStats {
                 lt++;
             }
         }
-        
-        result[0] = eq;
-        result[1] = gt;
-        result[2] = lt;
     }
 
     @Benchmark
     public void vectors() {
-        int eq = 0;
-        int gt = 0;
-        int lt = 0;
-        
         for (int i = 0; i < arraySize; i += SPECIES.length()) {
             FloatVector aVector = FloatVector.fromArray(SPECIES, a, i);
             FloatVector bVector = FloatVector.fromArray(SPECIES, b, i);
@@ -78,10 +69,6 @@ public class ArrayStats {
             lt += ltCount;
             gt += SPECIES.length() - ltCount - eqCount; // SPECIES.length() == Number of array elements that fit inside a SIMD register
         }
-        
-        result[0] = eq;
-        result[1] = gt;
-        result[2] = lt;
     }
     
     @Setup(Level.Trial)
@@ -89,12 +76,18 @@ public class ArrayStats {
         Random random = new Random();
         a = new float[arraySize];
         b = new float[arraySize];
-        result = new float[arraySize];
 
         for (int i = 0; i < arraySize; i++) {
             a[i] = random.nextFloat();
             b[i] = random.nextFloat();
         }
+    }
+    
+    @Setup(Level.Invocation)
+    public void reset() {
+        eq = 0;
+        gt = 0;
+        lt = 0;
     }
 
     public static void main(String[] args) throws RunnerException {
