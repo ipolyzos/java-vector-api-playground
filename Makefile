@@ -22,23 +22,23 @@ package: compile
 
 # Run the ArrayStats
 run-array-stats: package
-	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ArrayStats > results/ArrayStats.txt
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ArrayStats
 
 # Run the ComplexExpression
 run-complex-expression: package
-	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpression > results/ComplexExpression.txt
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpression
 
 # Run the ComplexExpressionNoSuperWord
 run-complex-expression-no-super-word: package
-	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpressionNoSuperWord > results/ComplexExpressionNoSuperWord.txt
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpressionNoSuperWord
 
 # Run the SimpleSum
 run-simple-sum: package
-	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSum > results/SimpleSum.txt
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSum
 
 # Run the SimpleSumNoSuperWord
 run-simple-sum-no-super-word: package
-	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSumNoSuperWord > results/SimpleSumNoSuperWord.txt
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSumNoSuperWord
 
 # Run all the programs
 run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word
