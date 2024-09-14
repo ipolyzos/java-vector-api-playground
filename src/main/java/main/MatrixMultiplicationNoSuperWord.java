@@ -18,11 +18,12 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(jvmArgs = {
         "-XX:-TieredCompilation",
+        "-XX:-UseSuperWord",
         "-Xms16g",
         "--enable-preview",
         "--add-modules=jdk.incubator.vector",
 })
-public class MatrixMultiplication {
+public class MatrixMultiplicationNoSuperWord {
 
     private static final VectorSpecies<Float> SPECIES = FloatVector.SPECIES_PREFERRED;
 
@@ -77,9 +78,8 @@ public class MatrixMultiplication {
 
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
-                .include(MatrixMultiplication.class.getSimpleName())
-                .exclude(MatrixMultiplicationNoSuperWord.class.getSimpleName())
-                .result("results/MatrixMultiplication.json")
+                .include(MatrixMultiplicationNoSuperWord.class.getSimpleName())
+                .result("results/MatrixMultiplicationNoSuperWord.json")
                 .resultFormat(ResultFormatType.JSON)
                 .build();
 

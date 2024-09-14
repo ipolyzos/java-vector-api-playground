@@ -55,6 +55,7 @@ To run the benchmarks, use the following commands:
 - DotProduct: ```$ make run-dot-product```
 - DotProductNoSuperWord: ```$ make run-dot-product-no-super-word```
 - MatrixMultiplication: ```$ make run-matrix-multiplication```
+- MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - All Benchmarks: ```$ make run-all```
 
 ## License
