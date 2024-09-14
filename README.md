@@ -53,6 +53,7 @@ To run the benchmarks, use the following commands:
 - SimpleSum: ```$ make run-simple-sum```
 - SimpleSumNoSuperWord: ```$make run-simple-sum-no-super-word```
 - DotProduct: ```$ make run-dot-product```
+- DotProductNoSuperWord: ```$ make run-dot-product-no-super-word```
 - All Benchmarks: ```$ make run-all```
 
 ## License
