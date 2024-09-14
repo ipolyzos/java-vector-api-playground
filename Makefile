@@ -40,5 +40,9 @@ run-simple-sum: package
 run-simple-sum-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSumNoSuperWord
 
+# Run the DotProduct
+run-dot-product: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.DotProduct
+
 # Run all the programs
-run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word
+run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product
