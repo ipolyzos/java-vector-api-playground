@@ -12,6 +12,7 @@ import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -33,7 +34,7 @@ public class ArrayStats {
 
     private static final VectorSpecies<Float> SPECIES = FloatVector.SPECIES_PREFERRED;
 
-    @Param({ "64", "512", "4096", "32768", "262144", "2097152", "16777216", "134217728" })
+    @Param({ "64" , "512", "4096", "32768", "262144", "2097152", "16777216", "134217728" })
     int arraySize;
     
     int eq = 0;
@@ -93,7 +94,8 @@ public class ArrayStats {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(ArrayStats.class.getSimpleName())
-                .result("results/ArrayStats.json")
+            .result("results/ArrayStats.json")
+            .resultFormat(ResultFormatType.JSON)
             .build();
         
         new Runner(options).run();

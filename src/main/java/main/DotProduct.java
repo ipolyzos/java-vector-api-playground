@@ -4,6 +4,7 @@ import jdk.incubator.vector.FloatVector;
 import jdk.incubator.vector.VectorOperators;
 import jdk.incubator.vector.VectorSpecies;
 import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -67,6 +68,7 @@ public class DotProduct {
         Options options = new OptionsBuilder()
                 .include(DotProduct.class.getSimpleName())
                 .result("results/DotProduct.json")
+                .resultFormat(ResultFormatType.JSON)
                 .build();
 
         new Runner(options).run();
