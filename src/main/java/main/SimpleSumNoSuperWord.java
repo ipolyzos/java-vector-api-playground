@@ -74,6 +74,7 @@ public class SimpleSumNoSuperWord {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(SimpleSumNoSuperWord.class.getSimpleName())
+            .result("results/simple-sum-no-super-word.json")
             .build();
         
         new Runner(options).run();

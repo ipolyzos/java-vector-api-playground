@@ -84,6 +84,7 @@ public class ComplexExpressionNoSuperWord {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(ComplexExpressionNoSuperWord.class.getSimpleName())
+            .result("results/complex-expression-no-super-word.json")
             .build();
         
         new Runner(options).run();
