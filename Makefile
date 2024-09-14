@@ -3,6 +3,10 @@
 #
 # Author: Ioannis Polyzos <git@ipolyzos.com>
 
+# Setup the project
+setup:
+	@mkdir -p results
+
 # Clean the project using the maven build tool
 clean:
 	mvn clean
