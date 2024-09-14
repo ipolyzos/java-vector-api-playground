@@ -19,3 +19,26 @@ compile: setup
 # Package the program using the maven build tool
 package: compile
 	mvn package
+
+# Run the ArrayStats
+run-array-stats: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ArrayStats > results/ArrayStats.txt
+
+# Run the ComplexExpression
+run-complex-expression: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpression > results/ComplexExpression.txt
+
+# Run the ComplexExpressionNoSuperWord
+run-complex-expression-no-super-word: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpressionNoSuperWord > results/ComplexExpressionNoSuperWord.txt
+
+# Run the SimpleSum
+run-simple-sum: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSum > results/SimpleSum.txt
+
+# Run the SimpleSumNoSuperWord
+run-simple-sum-no-super-word: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SimpleSumNoSuperWord > results/SimpleSumNoSuperWord.txt
+
+# Run all the programs
+run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word
