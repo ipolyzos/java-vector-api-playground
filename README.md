@@ -1,4 +1,4 @@
-# Java Vector API Experiments
+# Java Vector API Playground
 
 The goal of this project is to offer a testbed for experimentation with the Java Vector API and make it easy to run tests and benchmarks. It was initiated as a clone from the work presented in [Java’s new Vector API: How fast is it? — Part 1](https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610) by [Tomer Zeltzer](https://github.com/tomerr90) and further augmented to serve as a generic playground for experimentation and learning purposes.
 
