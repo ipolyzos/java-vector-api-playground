@@ -93,7 +93,7 @@ public class ArrayStats {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(ArrayStats.class.getSimpleName())
-            .result("results/array-stats.json")
+                .result("results/ArrayStats.json")
             .build();
         
         new Runner(options).run();

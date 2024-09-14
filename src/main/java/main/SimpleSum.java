@@ -74,7 +74,7 @@ public class SimpleSum {
         Options options = new OptionsBuilder()
             .include(SimpleSum.class.getSimpleName())
             .exclude(SimpleSumNoSuperWord.class.getSimpleName())
-            .result("results/simple-sum.json")
+            .result("results/SimpleSum.json")
             .build();
         
         new Runner(options).run();

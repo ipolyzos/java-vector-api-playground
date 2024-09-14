@@ -84,7 +84,7 @@ public class ComplexExpression {
         Options options = new OptionsBuilder()
             .include(ComplexExpression.class.getSimpleName())
             .exclude(ComplexExpressionNoSuperWord.class.getSimpleName())
-            .result("results/complex-expression.json")
+            .result("results/ComplexExpression.json")
             .build();
         
         new Runner(options).run();
