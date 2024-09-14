@@ -12,7 +12,7 @@ The goal of this project is to offer a testbed for experimentation with the Java
 
 *NOTE:* 
 
-_Please note that the `ressults` directory is ignored from git as it is auto-generated, also lost with cleanup)._
+_Please note that the `results` directory is ignored from git as it is auto-generated, also lost with cleanup)._
 
 ## Prerequisites
 
