@@ -68,7 +68,7 @@ public class DotProductNoSuperWord {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
                 .include(DotProductNoSuperWord.class.getSimpleName())
-                .result("results/DotProduct.json")
+                .result("results/DotProductNoSuperWord.json")
                 .resultFormat(ResultFormatType.JSON)
                 .build();
 
