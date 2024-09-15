@@ -24,6 +24,10 @@ package: compile
 run-array-stats: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ArrayStats
 
+# Run the ArrayStatsNoSuperWord
+run-array-stats-no-super-word: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ArrayStatsNoSuperWord
+
 # Run the ComplexExpression
 run-complex-expression: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.ComplexExpression
@@ -62,4 +66,4 @@ run-vector-addition-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAdditionNoSuperWord
 
 # Run all the programs
-run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication run-vector-addition run-vector-addition-no-super-word
+run-all: run-array-stats run-array-stats-no-super-word run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication run-vector-addition run-vector-addition-no-super-word
