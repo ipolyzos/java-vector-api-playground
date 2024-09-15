@@ -55,5 +55,11 @@ run-matrix-multiplication: package
 run-matrix-multiplication-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.MatrixMultiplicationNoSuperWord
 
+run-vector-addition: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAddition
+
+run-vector-addition-no-super-word: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAdditionNoSuperWord
+
 # Run all the programs
-run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication
+run-all: run-array-stats run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication run-vector-addition run-vector-addition-no-super-word
