@@ -1,6 +1,13 @@
 # Java Vector API Playground
 
-The goal of this project is to offer a testbed for experimentation with the Java Vector API and make it easy to run tests and benchmarks. It was initiated as a clone from the work presented in [Java’s new Vector API: How fast is it? — Part 1](https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610) by [Tomer Zeltzer](https://github.com/tomerr90) and further augmented to serve as a generic playground for experimentation and learning purposes.
+The aim of this project is to provide a test environment for experimenting with the Java [Vector API](https://openjdk.org/jeps/460) and simplify the process of running tests and contacting benchmarks. In addition to the benchmarks and tests included in this repository, our goal is to compile documentation and links to key resources that support the efficient and optimal use of the API. We also aim to maintain a record and a library of these valuable sources for future reference.
+### Vector API
+
+The primary goals of the [Vector API](https://openjdk.org/jeps/460) are to provide a platform-independent interface that allows for efficient implementation across various CPU architectures, such as [x64](https://en.wikipedia.org/wiki/X86-64) and [AArch64](https://en.wikipedia.org/wiki/AArch64), while ensuring consistent runtime compilation and performance. This reliability is crucial for developers to confidently utilize vector operations, with the expectation that they will closely align with hardware vector instructions, such as [Streaming SIMD Extensions (SSE)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) and [Advanced Vector Extensions (AVX)](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions) on x64, as well as [NEON](https://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_(NEON)) and [SVE](https://en.wikipedia.org/wiki/Scalable_Vector_Extension) on AArch64.
+
+The Vector API is designed in such a way to offer developers a straightforward and efficient means of expressing vector computations, which can be compiled at runtime into optimized vector instructions on compatible CPU architectures. This approach enables significantly better performance than traditional scalar computations.
+
+The [latest update](https://openjdk.java.net/jeps/460), proposed for [JDK 22](https://openjdk.org/projects/jdk/22/), introduces _minor improvements_ and _bug fixes_, most notably expanding support for vector access to heap MemorySegments backed by arrays of any primitive element type. This marks a substantial enhancement over the previous limitation, which only supported byte arrays, broadening the API's versatility and performance potential.
 
 ## Project Structure
 
