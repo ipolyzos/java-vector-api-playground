@@ -56,12 +56,15 @@ run-dot-product-no-super-word: package
 run-matrix-multiplication: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.MatrixMultiplication
 
+# Run the MatrixMultiplicationNoSuperWord
 run-matrix-multiplication-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.MatrixMultiplicationNoSuperWord
 
+# Run the VectorAddition
 run-vector-addition: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAddition
 
+# Run the VectorAdditionNoSuperWord
 run-vector-addition-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAdditionNoSuperWord
 
