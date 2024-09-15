@@ -65,6 +65,21 @@ To run the benchmarks, use the following commands:
 - MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - All Benchmarks: ```$ make run-all```
 
+## References
+
+- [Java Vector API - JEP-338](https://openjdk.java.net/jeps/338) - JEP 338: Vector API (Incubator, JDK 16) 
+- [Java Vector API - JEP-414](https://openjdk.java.net/jeps/414) - JEP 414: Vector API (Second Incubator, JDK 17)
+- [Java Vector API - JEP-417](https://openjdk.java.net/jeps/417) - JEP 417: Vector API (Third Incubator, JDK 18)
+- [Java Vector API - JEP-426](https://openjdk.java.net/jeps/426) - JEP 426: Vector API (Fourth Incubator, JDK 19)
+- [Java Vector API - JEP-438](https://openjdk.java.net/jeps/438) - JEP 438: Vector API (Fifth Incubator, JDK 20)
+- [Java Vector API - JEP-448](https://openjdk.java.net/jeps/448) - JEP 448: Vector API (Sixth Incubator, JDK 21)
+- [Java Vector API - JEP-460](https://openjdk.java.net/jeps/460) - JEP 460: Vector API (Seventh Incubator, JDK 22)
+- [Java Vector API (Incubator) Documentation](https://download.java.net/java/early_access/jdk17/docs/api/jdk.incubator.vector/module-summary.html)
+- [Java Vector API Documentation](https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/vector/package-summary.html)
+- [Java Vector API: A New Era of Vectorization in Java](https://www.baeldung.com/java-vector-api) by [Baeldung](https://www.baeldung.com/)
+- [Java Vector API on AArch64](https://community.arm.com/arm-community-blogs/b/high-performance-computing-blog/posts/java-vector-api-on-aarch64)
+- [Java’s new Vector API: How fast is it? — Part 1](https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610) by [Tomer Zeltzer](https://github.com/tomerr90) and further augmented to serve as a generic playground for experimentation and learning purposes.
+
 ## License
 
 This project is licensed under the _MIT License_ - see the [LICENSE](LICENSE) file for details.
