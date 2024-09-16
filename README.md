@@ -60,6 +60,8 @@ To run the benchmarks, use the following commands:
 - ComplexExpressionNoSuperWord: ```$ make run-complex-expression-no-super-word```
 - DotProduct: ```$ make run-dot-product```
 - DotProductNoSuperWord: ```$ make run-dot-product-no-super-word```
+- ElementWiseMultiplication: ```$ make run-element-wise-multiplication```
+- ElementWiseMultiplicationNoSuperWord: ```$ make run-element-wise-multiplication-no-super-word```
 - MatrixMultiplication: ```$ make run-matrix-multiplication```
 - MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - SimpleSum: ```$ make run-simple-sum```
