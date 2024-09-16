@@ -86,6 +86,7 @@ To run the benchmarks, use the following commands:
 - [Java Vector API: A New Era of Vectorization in Java](https://www.baeldung.com/java-vector-api) by [Baeldung](https://www.baeldung.com/)
 - [Java Vector API on AArch64](https://community.arm.com/arm-community-blogs/b/high-performance-computing-blog/posts/java-vector-api-on-aarch64)
 - [Java’s new Vector API: How fast is it? — Part 1](https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610) by [Tomer Zeltzer](https://github.com/tomerr90) 
+- [Jector math made easy: John Rose and Paul Sandoz on Java’s Vector API](https://blogs.oracle.com/javamagazine/post/java-vector-api-simd)
 
 ## License
 
