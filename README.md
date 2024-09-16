@@ -55,8 +55,13 @@ $ make package
 
 To run the benchmarks, use the following commands:  
 - ArrayStats: ```$ make run-array-stats```
+- ArrayStatsNoSuperWord: ```$ make run-array-stats-no-super-word```
 - ComplexExpression: ```$ make run-complex-expression```
 - ComplexExpressionNoSuperWord: ```$ make run-complex-expression-no-super-word```
+- DotProduct: ```$ make run-dot-product```
+- DotProductNoSuperWord: ```$ make run-dot-product-no-super-word```
+- MatrixMultiplication: ```$ make run-matrix-multiplication```
+- MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - SimpleSum: ```$ make run-simple-sum```
 - SimpleSumNoSuperWord: ```$make run-simple-sum-no-super-word```
 - DotProduct: ```$ make run-dot-product```
