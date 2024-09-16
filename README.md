@@ -89,6 +89,9 @@ To run the benchmarks, use the following commands:
 - [Jector math made easy: John Rose and Paul Sandoz on Java’s Vector API](https://blogs.oracle.com/javamagazine/post/java-vector-api-simd)
 - [Vector API: SIMD Programming in Java](https://www.youtube.com/watch?v=VYo3p4R66N8)
 - [Vectorized Intrinsics Can Be Replaced with Pure Java Code without Impairing Steady-State Performance](https://dl.acm.org/doi/pdf/10.1145/3629526.3645051) 
+- [Java Vector API: Benchmarking and Performance Analysis](https://dl.acm.org/doi/abs/10.1145/3578360.3580265)
+- [Design of a custom vector operation API exploiting SIMD intrinsics within Java](https://ieeexplore.ieee.org/abstract/document/5575190)
+- [Vectorization for Java](https://link.springer.com/chapter/10.1007/978-3-642-15672-4_3)
 
 ## License
 
