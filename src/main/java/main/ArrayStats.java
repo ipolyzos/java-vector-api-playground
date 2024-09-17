@@ -94,6 +94,7 @@ public class ArrayStats {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(ArrayStats.class.getSimpleName())
+            .exclude(ArrayStatsNoSuperWord.class.getSimpleName())
             .result("results/ArrayStats.json")
             .resultFormat(ResultFormatType.JSON)
             .build();
