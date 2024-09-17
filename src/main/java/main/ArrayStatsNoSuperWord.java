@@ -86,7 +86,7 @@ public class ArrayStatsNoSuperWord {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
             .include(ArrayStatsNoSuperWord.class.getSimpleName())
-            .result("results/ArrayStats.json")
+            .result("results/ArrayStatsNoSuperWord.json")
             .resultFormat(ResultFormatType.JSON)
             .build();
         
