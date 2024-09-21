@@ -66,7 +66,8 @@ public class ElementWiseMultiplication {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
                 .include(ElementWiseMultiplication.class.getSimpleName())
-                .result("results/ElementWiseMultiplicationNoSuperWord.json")
+                .exclude(ElementWiseMultiplicationNoSuperWord.class.getSimpleName())
+                .result("results/ElementWiseMultiplication.json")
                 .resultFormat(ResultFormatType.JSON)
                 .build();
 
