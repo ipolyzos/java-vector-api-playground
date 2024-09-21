@@ -1,0 +1,2772 @@
+[
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 17.42914738008548,
+            "scoreError" : 0.07719440401484841,
+            "scoreConfidence" : [
+                17.351952976070635,
+                17.50634178410033
+            ],
+            "scorePercentiles" : {
+                "0.0" : 17.375566330458444,
+                "50.0" : 17.397361644153403,
+                "90.0" : 17.58703614356539,
+                "95.0" : 17.768871963980715,
+                "99.0" : 17.779724088055588,
+                "99.9" : 17.779724088055588,
+                "99.99" : 17.779724088055588,
+                "99.999" : 17.779724088055588,
+                "99.9999" : 17.779724088055588,
+                "100.0" : 17.779724088055588
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    17.375566330458444,
+                    17.44173302335508,
+                    17.382178012586653,
+                    17.409586818367654,
+                    17.40079295990589
+                ],
+                [
+                    17.779724088055588,
+                    17.430179038342157,
+                    17.482693345182753,
+                    17.39125973954266,
+                    17.390152835693804
+                ],
+                [
+                    17.379318049587006,
+                    17.41218007654324,
+                    17.38146258798229,
+                    17.385912610082798,
+                    17.42399273751387
+                ],
+                [
+                    17.39811994156852,
+                    17.382330050541942,
+                    17.405163463195517,
+                    17.397361644153403,
+                    17.38055426738811
+                ],
+                [
+                    17.743550341139343,
+                    17.399030875277557,
+                    17.39458107348714,
+                    17.384065306762075,
+                    17.377195285423646
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "512"
+        },
+        "primaryMetric" : {
+            "score" : 117.88278742431419,
+            "scoreError" : 0.3644347863350493,
+            "scoreConfidence" : [
+                117.51835263797913,
+                118.24722221064924
+            ],
+            "scorePercentiles" : {
+                "0.0" : 117.41328796226104,
+                "50.0" : 117.74641811431532,
+                "90.0" : 118.42439874984082,
+                "95.0" : 119.5144081559464,
+                "99.0" : 119.85123404821339,
+                "99.9" : 119.85123404821339,
+                "99.99" : 119.85123404821339,
+                "99.999" : 119.85123404821339,
+                "99.9999" : 119.85123404821339,
+                "100.0" : 119.85123404821339
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    117.41328796226104,
+                    117.96540141558157,
+                    117.59831750500395,
+                    117.7181566587632,
+                    117.7747885752779
+                ],
+                [
+                    117.7387444194926,
+                    117.88370828568654,
+                    117.83473294574208,
+                    117.81991521484277,
+                    117.61193081112039
+                ],
+                [
+                    119.85123404821339,
+                    117.68171422670241,
+                    118.72848107399011,
+                    117.74010380152785,
+                    117.68226612134214
+                ],
+                [
+                    117.59769815382035,
+                    117.53248616762473,
+                    117.6223124486869,
+                    117.78820586425628,
+                    118.22167720040795
+                ],
+                [
+                    117.60303393229715,
+                    117.94475314423852,
+                    117.87329659355179,
+                    117.74641811431532,
+                    118.09702092310772
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 927.7764646045548,
+            "scoreError" : 5.276531357781861,
+            "scoreConfidence" : [
+                922.4999332467729,
+                933.0529959623367
+            ],
+            "scorePercentiles" : {
+                "0.0" : 922.2256144642969,
+                "50.0" : 925.0234337580449,
+                "90.0" : 936.1889182924199,
+                "95.0" : 950.8180135829278,
+                "99.0" : 956.632178541628,
+                "99.9" : 956.632178541628,
+                "99.99" : 956.632178541628,
+                "99.999" : 956.632178541628,
+                "99.9999" : 956.632178541628,
+                "100.0" : 956.632178541628
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    935.4804447011704,
+                    937.251628679294,
+                    956.632178541628,
+                    929.6403498225225,
+                    927.5756760354035
+                ],
+                [
+                    924.8066774302054,
+                    925.1045380976354,
+                    927.865542087424,
+                    924.8633414361727,
+                    926.1230834618138
+                ],
+                [
+                    924.4126553536568,
+                    925.36581787974,
+                    924.835951545739,
+                    929.1392291467571,
+                    924.598773341676
+                ],
+                [
+                    931.4661651048369,
+                    924.6931405843238,
+                    924.9449299130002,
+                    927.8570587469054,
+                    922.2256144642969
+                ],
+                [
+                    922.5094786517919,
+                    923.4052130271689,
+                    924.2501039966987,
+                    925.0234337580449,
+                    924.3405893059627
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "32768"
+        },
+        "primaryMetric" : {
+            "score" : 9136.868859724684,
+            "scoreError" : 15.734552296818455,
+            "scoreConfidence" : [
+                9121.134307427865,
+                9152.603412021503
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9104.24243979453,
+                "50.0" : 9137.477504984532,
+                "90.0" : 9163.013940962002,
+                "95.0" : 9181.952640061103,
+                "99.0" : 9190.046255447936,
+                "99.9" : 9190.046255447936,
+                "99.99" : 9190.046255447936,
+                "99.999" : 9190.046255447936,
+                "99.9999" : 9190.046255447936,
+                "100.0" : 9190.046255447936
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    9136.716690891584,
+                    9149.345161349318,
+                    9163.067537491826,
+                    9105.364856526607,
+                    9115.925824018135
+                ],
+                [
+                    9158.756519072509,
+                    9127.337884201894,
+                    9119.426134027995,
+                    9190.046255447936,
+                    9156.228094578346
+                ],
+                [
+                    9104.24243979453,
+                    9139.678703041562,
+                    9140.243992187514,
+                    9123.076724894254,
+                    9119.820919370923
+                ],
+                [
+                    9160.938685853356,
+                    9162.97820994212,
+                    9128.41173561832,
+                    9137.477504984532,
+                    9137.673586547831
+                ],
+                [
+                    9127.304164286457,
+                    9137.877161225037,
+                    9150.281935799054,
+                    9121.465878611842,
+                    9108.034893353604
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 73209.29054679385,
+            "scoreError" : 265.2428252394293,
+            "scoreConfidence" : [
+                72944.04772155442,
+                73474.53337203329
+            ],
+            "scorePercentiles" : {
+                "0.0" : 72676.91867644922,
+                "50.0" : 73127.84444428199,
+                "90.0" : 73788.34633016202,
+                "95.0" : 73814.69047481324,
+                "99.0" : 73825.40269620142,
+                "99.9" : 73825.40269620142,
+                "99.99" : 73825.40269620142,
+                "99.999" : 73825.40269620142,
+                "99.9999" : 73825.40269620142,
+                "100.0" : 73825.40269620142
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    73699.68120842449,
+                    72968.09728704784,
+                    73345.02214549613,
+                    73127.84444428199,
+                    73184.34808654437
+                ],
+                [
+                    73787.44702255396,
+                    73102.60843738812,
+                    72815.00090241541,
+                    72823.50976380476,
+                    73149.18471416766
+                ],
+                [
+                    73713.12102877778,
+                    73010.13706209988,
+                    72984.24100719424,
+                    72930.11072074174,
+                    72676.91867644922
+                ],
+                [
+                    73825.40269620142,
+                    72884.94043387045,
+                    72913.55921047836,
+                    72927.9720047242,
+                    72863.04172828533
+                ],
+                [
+                    73789.69529157413,
+                    73501.7747013796,
+                    73352.12158001232,
+                    73339.47303795799,
+                    73517.01047797494
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "2097152"
+        },
+        "primaryMetric" : {
+            "score" : 643625.1848068981,
+            "scoreError" : 4680.885050346321,
+            "scoreConfidence" : [
+                638944.2997565517,
+                648306.0698572445
+            ],
+            "scorePercentiles" : {
+                "0.0" : 638071.199247401,
+                "50.0" : 641656.9427948438,
+                "90.0" : 653722.9608563833,
+                "95.0" : 662148.7722806728,
+                "99.0" : 665433.6010242086,
+                "99.9" : 665433.6010242086,
+                "99.99" : 665433.6010242086,
+                "99.999" : 665433.6010242086,
+                "99.9999" : 665433.6010242086,
+                "100.0" : 665433.6010242086
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    639250.4234309088,
+                    640905.9777735076,
+                    638834.1473630443,
+                    640265.636625488,
+                    638071.199247401
+                ],
+                [
+                    643460.4904495466,
+                    639384.4472002046,
+                    647066.9335058215,
+                    649368.6802310488,
+                    642426.1661421874
+                ],
+                [
+                    641119.5923860796,
+                    641834.0951311822,
+                    640323.0860104953,
+                    638820.8144672157,
+                    639346.216741214
+                ],
+                [
+                    641656.9427948438,
+                    653215.486841246,
+                    639308.494152981,
+                    642938.3701966328,
+                    640991.5967059728
+                ],
+                [
+                    654484.1718790892,
+                    642721.7208376157,
+                    645381.68375903,
+                    644019.6452754892,
+                    665433.6010242086
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "16777216"
+        },
+        "primaryMetric" : {
+            "score" : 5502795.455534884,
+            "scoreError" : 24997.098561968138,
+            "scoreConfidence" : [
+                5477798.356972916,
+                5527792.5540968515
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5447253.243331519,
+                "50.0" : 5494174.785400659,
+                "90.0" : 5552055.542031003,
+                "95.0" : 5576314.217291662,
+                "99.0" : 5581475.111544897,
+                "99.9" : 5581475.111544897,
+                "99.99" : 5581475.111544897,
+                "99.999" : 5581475.111544897,
+                "99.9999" : 5581475.111544897,
+                "100.0" : 5581475.111544897
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5543239.889196676,
+                    5581475.111544897,
+                    5511684.172907489,
+                    5509077.141441938,
+                    5488791.849149753
+                ],
+                [
+                    5466162.09229929,
+                    5502549.042330951,
+                    5468655.601092896,
+                    5492088.822173436,
+                    5458360.224768139
+                ],
+                [
+                    5482830.684931506,
+                    5465474.3080284,
+                    5447253.243331519,
+                    5472239.355579869,
+                    5523512.0331308665
+                ],
+                [
+                    5520883.801985659,
+                    5564272.130700778,
+                    5520531.893487859,
+                    5482760.32,
+                    5494174.785400659
+                ],
+                [
+                    5492759.947859495,
+                    5517395.075523704,
+                    5529228.17679558,
+                    5543911.149584487,
+                    5490575.535126235
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "134217728"
+        },
+        "primaryMetric" : {
+            "score" : 5.980664533107072E7,
+            "scoreError" : 9090194.314124323,
+            "scoreConfidence" : [
+                5.07164510169464E7,
+                6.889683964519504E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4.817151682692308E7,
+                "50.0" : 5.760050143678161E7,
+                "90.0" : 6.96691340676789E7,
+                "95.0" : 9.800375242027968E7,
+                "99.0" : 1.1001822985714285E8,
+                "99.9" : 1.1001822985714285E8,
+                "99.99" : 1.1001822985714285E8,
+                "99.999" : 1.1001822985714285E8,
+                "99.9999" : 1.1001822985714285E8,
+                "100.0" : 1.1001822985714285E8
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5.0603528828282826E7,
+                    5.851975387209302E7,
+                    6.946857562328768E7,
+                    5.6226317415730335E7,
+                    5.822443677325582E7
+                ],
+                [
+                    1.1001822985714285E8,
+                    6.996997173426573E7,
+                    5.0866012055837564E7,
+                    6.4689126341935486E7,
+                    5.489071903825136E7
+                ],
+                [
+                    5.584073526519337E7,
+                    5.368405793582888E7,
+                    4.817151682692308E7,
+                    5.1703511814432986E7,
+                    5.888211495294118E7
+                ],
+                [
+                    6.230018762732919E7,
+                    5.760050143678161E7,
+                    6.18095997962963E7,
+                    6.387824177070063E7,
+                    6.692975444E7
+                ],
+                [
+                    6.1857497425925925E7,
+                    5.189397301554404E7,
+                    5.0732158040404044E7,
+                    5.066154356060606E7,
+                    5.574406782777778E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 7.137207204570356,
+            "scoreError" : 0.10049232104162505,
+            "scoreConfidence" : [
+                7.036714883528731,
+                7.237699525611982
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.04765559574882,
+                "50.0" : 7.078053269708055,
+                "90.0" : 7.404833292278409,
+                "95.0" : 7.5043172240484175,
+                "99.0" : 7.527154386964896,
+                "99.9" : 7.527154386964896,
+                "99.99" : 7.527154386964896,
+                "99.999" : 7.527154386964896,
+                "99.9999" : 7.527154386964896,
+                "100.0" : 7.527154386964896
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    7.058736670050756,
+                    7.061132189269276,
+                    7.04765559574882,
+                    7.05489726202266,
+                    7.053981193092352
+                ],
+                [
+                    7.085647776567623,
+                    7.065875369537226,
+                    7.120852176901689,
+                    7.102561380302194,
+                    7.06657473326276
+                ],
+                [
+                    7.091014819645485,
+                    7.06649430327799,
+                    7.0885611372149535,
+                    7.077500468011378,
+                    7.082821738840958
+                ],
+                [
+                    7.078053269708055,
+                    7.062297521655394,
+                    7.068195207395821,
+                    7.069288250840178,
+                    7.1180524159311975
+                ],
+                [
+                    7.3136408643745865,
+                    7.527154386964896,
+                    7.374035146746257,
+                    7.244125726319803,
+                    7.4510305105766355
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "512"
+        },
+        "primaryMetric" : {
+            "score" : 34.691018413022384,
+            "scoreError" : 1.330553622261693,
+            "scoreConfidence" : [
+                33.36046479076069,
+                36.02157203528408
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32.808637598922594,
+                "50.0" : 34.15177969488666,
+                "90.0" : 38.168514144095866,
+                "95.0" : 38.74847075146677,
+                "99.0" : 38.88787107465356,
+                "99.9" : 38.88787107465356,
+                "99.99" : 38.88787107465356,
+                "99.999" : 38.88787107465356,
+                "99.9999" : 38.88787107465356,
+                "100.0" : 38.88787107465356
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    35.16228997111399,
+                    32.87372089691024,
+                    33.786918662665535,
+                    34.74096174555771,
+                    34.245492876206484
+                ],
+                [
+                    34.545210449955505,
+                    33.88585809925371,
+                    35.041514463864445,
+                    33.20886382899335,
+                    32.808637598922594
+                ],
+                [
+                    33.548271610825985,
+                    33.54657256488321,
+                    33.71036928586042,
+                    34.07894466926228,
+                    33.7762375006217
+                ],
+                [
+                    35.125777456960755,
+                    35.084332173215266,
+                    32.9501850210605,
+                    32.96886001045075,
+                    34.15177969488666
+                ],
+                [
+                    34.75688996092748,
+                    37.967976024782025,
+                    38.42320333069758,
+                    38.88787107465356,
+                    37.99872135302805
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 256.01361538191014,
+            "scoreError" : 34.14345098891411,
+            "scoreConfidence" : [
+                221.87016439299603,
+                290.1570663708243
+            ],
+            "scorePercentiles" : {
+                "0.0" : 240.1675871023668,
+                "50.0" : 243.22566062364976,
+                "90.0" : 271.7246879676557,
+                "95.0" : 416.2163705698323,
+                "99.0" : 468.2432909668323,
+                "99.9" : 468.2432909668323,
+                "99.99" : 468.2432909668323,
+                "99.999" : 468.2432909668323,
+                "99.9999" : 468.2432909668323,
+                "100.0" : 468.2432909668323
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    256.32766462820456,
+                    254.61448653294443,
+                    252.55082111397496,
+                    246.42197448597662,
+                    241.4333416978603
+                ],
+                [
+                    240.8454109128668,
+                    249.95730801472618,
+                    245.66906378410098,
+                    249.94739601389048,
+                    249.1357619753533
+                ],
+                [
+                    468.2432909668323,
+                    294.82022297683255,
+                    251.55415678720794,
+                    241.2475011978654,
+                    241.9372542544396
+                ],
+                [
+                    243.45022888750523,
+                    243.22566062364976,
+                    242.68981927697692,
+                    242.08578247078725,
+                    240.42483450670082
+                ],
+                [
+                    240.700337172907,
+                    240.1675871023668,
+                    240.32264290318787,
+                    241.76479667990918,
+                    240.8030395806864
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "32768"
+        },
+        "primaryMetric" : {
+            "score" : 4110.38468886215,
+            "scoreError" : 9.103103151626954,
+            "scoreConfidence" : [
+                4101.281585710523,
+                4119.487792013777
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4090.467376737257,
+                "50.0" : 4107.1953461488565,
+                "90.0" : 4126.854944848028,
+                "95.0" : 4146.257975711996,
+                "99.0" : 4153.388130234659,
+                "99.9" : 4153.388130234659,
+                "99.99" : 4153.388130234659,
+                "99.999" : 4153.388130234659,
+                "99.9999" : 4153.388130234659,
+                "100.0" : 4153.388130234659
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4105.698285746647,
+                    4112.94970546039,
+                    4102.220975048136,
+                    4100.912971892225,
+                    4109.187570178746
+                ],
+                [
+                    4103.898794050749,
+                    4121.410600518019,
+                    4153.388130234659,
+                    4106.651545637536,
+                    4109.12177193605
+                ],
+                [
+                    4106.099094401351,
+                    4112.407786918936,
+                    4105.219219195803,
+                    4112.329614199269,
+                    4109.152470347614
+                ],
+                [
+                    4103.720074075745,
+                    4107.1953461488565,
+                    4102.603040379151,
+                    4106.0619167822615,
+                    4098.656590540916
+                ],
+                [
+                    4129.620948492449,
+                    4125.010942418414,
+                    4115.185301736442,
+                    4110.447148476112,
+                    4090.467376737257
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 32869.09844014156,
+            "scoreError" : 232.8276380399098,
+            "scoreConfidence" : [
+                32636.27080210165,
+                33101.926078181474
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32646.131763393,
+                "50.0" : 32754.574159374315,
+                "90.0" : 33387.73861155402,
+                "95.0" : 33819.07210173961,
+                "99.0" : 33849.28399518245,
+                "99.9" : 33849.28399518245,
+                "99.99" : 33849.28399518245,
+                "99.999" : 33849.28399518245,
+                "99.9999" : 33849.28399518245,
+                "100.0" : 33849.28399518245
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    32967.770357946625,
+                    32822.554926194054,
+                    33046.9721264026,
+                    32885.46891455694,
+                    32866.57326483216
+                ],
+                [
+                    32724.923243483692,
+                    32692.1826728207,
+                    32681.266597635746,
+                    32646.94576162787,
+                    32689.448479442744
+                ],
+                [
+                    32651.965383661427,
+                    32800.17262880447,
+                    32698.57857135854,
+                    32695.900665021814,
+                    32689.009595844087
+                ],
+                [
+                    32754.574159374315,
+                    32669.175464261574,
+                    32806.25204931471,
+                    32680.487460559067,
+                    32646.131763393
+                ],
+                [
+                    32945.3734187429,
+                    32920.69258925221,
+                    33147.179230119145,
+                    33748.57768370634,
+                    33849.28399518245
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "2097152"
+        },
+        "primaryMetric" : {
+            "score" : 390874.7752036207,
+            "scoreError" : 6948.66605255242,
+            "scoreConfidence" : [
+                383926.1091510683,
+                397823.44125617313
+            ],
+            "scorePercentiles" : {
+                "0.0" : 381870.3901656868,
+                "50.0" : 386811.53272509377,
+                "90.0" : 407998.6069931705,
+                "95.0" : 416899.22167076456,
+                "99.0" : 418582.21037874033,
+                "99.9" : 418582.21037874033,
+                "99.99" : 418582.21037874033,
+                "99.999" : 418582.21037874033,
+                "99.9999" : 418582.21037874033,
+                "100.0" : 418582.21037874033
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    384987.09711801144,
+                    395032.9068472595,
+                    385670.04745017923,
+                    386811.53272509377,
+                    385050.301481624
+                ],
+                [
+                    391109.5089906966,
+                    381870.3901656868,
+                    386795.06224146596,
+                    389642.0552417313,
+                    385954.3441768928
+                ],
+                [
+                    389422.64916514227,
+                    399286.06987509475,
+                    390380.738704643,
+                    391570.2048763306,
+                    392459.2436651761
+                ],
+                [
+                    412972.2480188212,
+                    418582.21037874033,
+                    404682.8463094034,
+                    383784.952965549,
+                    382141.7385990375
+                ],
+                [
+                    385289.38501232286,
+                    383514.452144582,
+                    383976.02532908623,
+                    394286.3959252837,
+                    386596.97268266295
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "16777216"
+        },
+        "primaryMetric" : {
+            "score" : 3857789.401411585,
+            "scoreError" : 47758.61986954928,
+            "scoreConfidence" : [
+                3810030.7815420358,
+                3905548.0212811343
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3796698.1066009104,
+                "50.0" : 3836509.04256135,
+                "90.0" : 3972593.2137197834,
+                "95.0" : 4036100.648598575,
+                "99.0" : 4057671.397810219,
+                "99.9" : 4057671.397810219,
+                "99.99" : 4057671.397810219,
+                "99.999" : 4057671.397810219,
+                "99.9999" : 4057671.397810219,
+                "100.0" : 4057671.397810219
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4057671.397810219,
+                    3985768.9004380726,
+                    3909915.429073857,
+                    3874585.3333333335,
+                    3836509.04256135
+                ],
+                [
+                    3868638.405259087,
+                    3963809.4225742575,
+                    3857126.1888974556,
+                    3832522.070088089,
+                    3799203.429764617
+                ],
+                [
+                    3797751.201897533,
+                    3796698.1066009104,
+                    3825278.4308103975,
+                    3866861.792810205,
+                    3836766.9509202456
+                ],
+                [
+                    3819704.182442748,
+                    3823722.07336645,
+                    3849666.0253943824,
+                    3817563.629389313,
+                    3884873.6570873787
+                ],
+                [
+                    3808206.7161339424,
+                    3878610.2065891474,
+                    3836502.0609662575,
+                    3817662.1358260205,
+                    3799118.245254366
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplication.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-XX:-UseSuperWord",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "134217728"
+        },
+        "primaryMetric" : {
+            "score" : 3.687807029087318E7,
+            "scoreError" : 3463979.274432221,
+            "scoreConfidence" : [
+                3.3414091016440958E7,
+                4.03420495653054E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.20020142428115E7,
+                "50.0" : 3.613545562454873E7,
+                "90.0" : 4.119874828693077E7,
+                "95.0" : 5.1124472311866716E7,
+                "99.0" : 5.48185066010929E7,
+                "99.9" : 5.48185066010929E7,
+                "99.99" : 5.48185066010929E7,
+                "99.999" : 5.48185066010929E7,
+                "99.9999" : 5.48185066010929E7,
+                "100.0" : 5.48185066010929E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.9927178617529884E7,
+                    3.8519974842307694E7,
+                    3.71409858037037E7,
+                    3.613545562454873E7,
+                    3.7002889705882356E7
+                ],
+                [
+                    3.20020142428115E7,
+                    4.0327874497991964E7,
+                    3.77274672631579E7,
+                    3.473946151736111E7,
+                    3.940456676377953E7
+                ],
+                [
+                    3.568815880782918E7,
+                    3.451150488275862E7,
+                    3.849095416538461E7,
+                    3.374434062962963E7,
+                    3.296250355409836E7
+                ],
+                [
+                    3.42633884109589E7,
+                    3.733816324626866E7,
+                    4.2505058970338985E7,
+                    3.500744959090909E7,
+                    3.452447112068965E7
+                ],
+                [
+                    3.375832634228188E7,
+                    5.48185066010929E7,
+                    3.233837271612903E7,
+                    3.647928924363636E7,
+                    3.2593400110749185E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 9.175564823985049,
+            "scoreError" : 0.04876090551259781,
+            "scoreConfidence" : [
+                9.12680391847245,
+                9.224325729497647
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9.117273269583468,
+                "50.0" : 9.152120986764452,
+                "90.0" : 9.307902520705984,
+                "95.0" : 9.351129252441625,
+                "99.0" : 9.361906058872439,
+                "99.9" : 9.361906058872439,
+                "99.99" : 9.361906058872439,
+                "99.999" : 9.361906058872439,
+                "99.9999" : 9.361906058872439,
+                "100.0" : 9.361906058872439
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    9.361906058872439,
+                    9.204662079241263,
+                    9.169855700144526,
+                    9.174935127327112,
+                    9.151517699006252
+                ],
+                [
+                    9.192725854163887,
+                    9.180454128620944,
+                    9.144013576766097,
+                    9.166907251542773,
+                    9.325983370769727
+                ],
+                [
+                    9.141503129469054,
+                    9.13523649749827,
+                    9.12067642411148,
+                    9.164694273119697,
+                    9.12323503051308
+                ],
+                [
+                    9.238993565046123,
+                    9.141897582298087,
+                    9.123157311617028,
+                    9.132042127521718,
+                    9.136095981458181
+                ],
+                [
+                    9.117273269583468,
+                    9.152120986764452,
+                    9.173198820387615,
+                    9.120186133119462,
+                    9.295848620663488
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "512"
+        },
+        "primaryMetric" : {
+            "score" : 35.75521757894173,
+            "scoreError" : 0.11107004263028364,
+            "scoreConfidence" : [
+                35.64414753631145,
+                35.86628762157201
+            ],
+            "scorePercentiles" : {
+                "0.0" : 35.634189569065164,
+                "50.0" : 35.70405187260015,
+                "90.0" : 35.88472460349938,
+                "95.0" : 36.231720221163364,
+                "99.0" : 36.37580706514291,
+                "99.9" : 36.37580706514291,
+                "99.99" : 36.37580706514291,
+                "99.999" : 36.37580706514291,
+                "99.9999" : 36.37580706514291,
+                "100.0" : 36.37580706514291
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    35.67002551063745,
+                    35.65664786438914,
+                    35.69693878860912,
+                    35.78852292805225,
+                    35.681757085189496
+                ],
+                [
+                    35.87752928235823,
+                    35.68283889066821,
+                    35.67041523919958,
+                    35.67407487187044,
+                    35.74857641734293
+                ],
+                [
+                    35.634189569065164,
+                    35.804934309626745,
+                    35.895517585211095,
+                    35.6876527471194,
+                    36.37580706514291
+                ],
+                [
+                    35.68831400287996,
+                    35.73704723845542,
+                    35.6657657136138,
+                    35.80358236963546,
+                    35.70615353013407
+                ],
+                [
+                    35.70405187260015,
+                    35.80779080667346,
+                    35.835538499776106,
+                    35.73353964049914,
+                    35.65322764479357
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 249.4059467541169,
+            "scoreError" : 1.0383431956311093,
+            "scoreConfidence" : [
+                248.3676035584858,
+                250.44428994974803
+            ],
+            "scorePercentiles" : {
+                "0.0" : 248.01425820931485,
+                "50.0" : 248.8806935922418,
+                "90.0" : 251.9827616922742,
+                "95.0" : 252.94548526565706,
+                "99.0" : 253.08028203738385,
+                "99.9" : 253.08028203738385,
+                "99.99" : 253.08028203738385,
+                "99.999" : 253.08028203738385,
+                "99.9999" : 253.08028203738385,
+                "100.0" : 253.08028203738385
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    248.18399562146945,
+                    249.2341348743151,
+                    249.16063279972636,
+                    249.3659033110336,
+                    253.08028203738385
+                ],
+                [
+                    248.8806935922418,
+                    248.8765390606346,
+                    248.6288752232187,
+                    251.272258360537,
+                    252.6309594649612
+                ],
+                [
+                    249.9424812456363,
+                    248.01425820931485,
+                    248.06647479115233,
+                    248.56866638637334,
+                    250.49108994606064
+                ],
+                [
+                    248.5290835841671,
+                    248.90542140146803,
+                    248.49860972520761,
+                    250.05238944791776,
+                    251.55062984381624
+                ],
+                [
+                    248.83767216270735,
+                    248.25719407091316,
+                    248.44616429471057,
+                    248.92905282880997,
+                    248.74520656914703
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "32768"
+        },
+        "primaryMetric" : {
+            "score" : 4115.820697702409,
+            "scoreError" : 13.42641966498879,
+            "scoreConfidence" : [
+                4102.39427803742,
+                4129.2471173673985
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4096.0760521695265,
+                "50.0" : 4109.246207513865,
+                "90.0" : 4145.48875274973,
+                "95.0" : 4158.868009724416,
+                "99.0" : 4163.40448589402,
+                "99.9" : 4163.40448589402,
+                "99.99" : 4163.40448589402,
+                "99.999" : 4163.40448589402,
+                "99.9999" : 4163.40448589402,
+                "100.0" : 4163.40448589402
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4113.113639661795,
+                    4096.0760521695265,
+                    4100.9967093759005,
+                    4102.070297054871,
+                    4109.246207513865
+                ],
+                [
+                    4099.830676684335,
+                    4109.773900910055,
+                    4108.3020736171675,
+                    4148.282898662009,
+                    4143.625988808211
+                ],
+                [
+                    4101.185278947375,
+                    4099.636523177166,
+                    4098.159162972335,
+                    4121.890931824409,
+                    4103.18672314716
+                ],
+                [
+                    4140.527370062917,
+                    4133.807147204196,
+                    4109.181413930168,
+                    4101.153309720337,
+                    4127.819638685743
+                ],
+                [
+                    4115.170165577629,
+                    4121.329844455095,
+                    4108.340161655325,
+                    4163.40448589402,
+                    4119.406840848613
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 32851.280412814376,
+            "scoreError" : 147.81976767602214,
+            "scoreConfidence" : [
+                32703.460645138355,
+                32999.1001804904
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32671.50083277271,
+                "50.0" : 32842.58648455246,
+                "90.0" : 33167.23121294897,
+                "95.0" : 33432.90706482128,
+                "99.0" : 33503.338523615785,
+                "99.9" : 33503.338523615785,
+                "99.99" : 33503.338523615785,
+                "99.999" : 33503.338523615785,
+                "99.9999" : 33503.338523615785,
+                "100.0" : 33503.338523615785
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    33099.674025381115,
+                    33268.56699430076,
+                    32842.58648455246,
+                    32739.922653633756,
+                    32746.556353243897
+                ],
+                [
+                    32923.43850818399,
+                    32842.85302787589,
+                    32848.237443611986,
+                    32890.50541930562,
+                    32885.067240755954
+                ],
+                [
+                    32936.93064156634,
+                    32938.082008822756,
+                    32884.69639075592,
+                    33503.338523615785,
+                    32862.56106341188
+                ],
+                [
+                    32677.27623473927,
+                    32672.3400188776,
+                    32719.102873512475,
+                    32811.48687425189,
+                    32671.50083277271
+                ],
+                [
+                    32726.497070839563,
+                    32738.836157433925,
+                    32673.327183657475,
+                    32685.136166666667,
+                    32693.490128589827
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "2097152"
+        },
+        "primaryMetric" : {
+            "score" : 385713.4720432111,
+            "scoreError" : 5938.253168975697,
+            "scoreConfidence" : [
+                379775.2188742354,
+                391651.7252121868
+            ],
+            "scorePercentiles" : {
+                "0.0" : 372440.6190812984,
+                "50.0" : 386622.6359666074,
+                "90.0" : 398427.6471006678,
+                "95.0" : 400191.5155223709,
+                "99.0" : 400758.20283585676,
+                "99.9" : 400758.20283585676,
+                "99.99" : 400758.20283585676,
+                "99.999" : 400758.20283585676,
+                "99.9999" : 400758.20283585676,
+                "100.0" : 400758.20283585676
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    380768.9471781406,
+                    390650.855168105,
+                    381841.4876159218,
+                    400758.20283585676,
+                    382571.7317324972
+                ],
+                [
+                    387302.42163124686,
+                    387956.1634805537,
+                    387375.67269348406,
+                    398133.2484182882,
+                    392725.65789886937
+                ],
+                [
+                    394819.88564438483,
+                    389801.60925810476,
+                    392946.31425990653,
+                    387716.64857009996,
+                    386622.6359666074
+                ],
+                [
+                    376822.767588129,
+                    385043.2816288826,
+                    377536.97834125726,
+                    398869.2451242372,
+                    383726.5228763183
+                ],
+                [
+                    374591.25952826656,
+                    372440.6190812984,
+                    377851.3523546962,
+                    377243.1883271123,
+                    376720.10387801204
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "16777216"
+        },
+        "primaryMetric" : {
+            "score" : 3944789.219574705,
+            "scoreError" : 65690.99013617648,
+            "scoreConfidence" : [
+                3879098.229438529,
+                4010480.2097108816
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3776835.7081917706,
+                "50.0" : 3951036.20529017,
+                "90.0" : 4053143.981672158,
+                "95.0" : 4148765.8880862393,
+                "99.0" : 4160581.600831601,
+                "99.9" : 4160581.600831601,
+                "99.99" : 4160581.600831601,
+                "99.999" : 4160581.600831601,
+                "99.9999" : 4160581.600831601,
+                "100.0" : 4160581.600831601
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3829086.5702257943,
+                    3776835.7081917706,
+                    3803969.3242113264,
+                    3816029.096491228,
+                    3835780.8704484478
+                ],
+                [
+                    3938576.676111767,
+                    3993819.3834796487,
+                    3979541.500994036,
+                    4121195.891680395,
+                    3996758.336661342
+                ],
+                [
+                    3938473.6489571035,
+                    3913026.088775909,
+                    3951036.20529017,
+                    4007776.0416666665,
+                    3978669.035785288
+                ],
+                [
+                    3980375.5306284805,
+                    3930276.8333988213,
+                    3936018.2033031853,
+                    3932572.7571709235,
+                    3927880.6599921477
+                ],
+                [
+                    3955784.337944664,
+                    3962586.830562154,
+                    3977557.7367793242,
+                    4160581.600831601,
+                    3975521.619785459
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.arrays",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "134217728"
+        },
+        "primaryMetric" : {
+            "score" : 3.642225904133246E7,
+            "scoreError" : 1643148.230023588,
+            "scoreConfidence" : [
+                3.4779110811308876E7,
+                3.8065407271356046E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.2518163691558443E7,
+                "50.0" : 3.570954656227758E7,
+                "90.0" : 3.991525223337337E7,
+                "95.0" : 4.160527822626544E7,
+                "99.0" : 4.1770512325E7,
+                "99.9" : 4.1770512325E7,
+                "99.99" : 4.1770512325E7,
+                "99.999" : 4.1770512325E7,
+                "99.9999" : 4.1770512325E7,
+                "100.0" : 4.1770512325E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.495237993728223E7,
+                    3.4949460512195125E7,
+                    3.570954656227758E7,
+                    3.5111726610526316E7,
+                    3.680755039705882E7
+                ],
+                [
+                    3.4844399597222224E7,
+                    3.519509985263158E7,
+                    3.5783243522968195E7,
+                    3.2518163691558443E7,
+                    3.573551532857143E7
+                ],
+                [
+                    3.8442058107279696E7,
+                    3.903828291050584E7,
+                    4.1219731995884776E7,
+                    3.658842396715328E7,
+                    3.823614869847328E7
+                ],
+                [
+                    3.904559905836576E7,
+                    3.4032669928571425E7,
+                    3.583618958214286E7,
+                    3.548038490070922E7,
+                    4.1770512325E7
+                ],
+                [
+                    3.497483797909407E7,
+                    3.8246085400763355E7,
+                    3.5179294592982456E7,
+                    3.5289741052816905E7,
+                    3.556942952127659E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 6.44867413022005,
+            "scoreError" : 0.032074394939483455,
+            "scoreConfidence" : [
+                6.416599735280567,
+                6.480748525159534
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.416157947174771,
+                "50.0" : 6.43361823946581,
+                "90.0" : 6.529117233879659,
+                "95.0" : 6.572106366826363,
+                "99.0" : 6.579288095327138,
+                "99.9" : 6.579288095327138,
+                "99.99" : 6.579288095327138,
+                "99.999" : 6.579288095327138,
+                "99.9999" : 6.579288095327138,
+                "100.0" : 6.579288095327138
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6.447460782713013,
+                    6.555349000324555,
+                    6.416157947174771,
+                    6.417618699548324,
+                    6.424426064383012
+                ],
+                [
+                    6.437783146874519,
+                    6.424368322630982,
+                    6.429693970326008,
+                    6.419103027881061,
+                    6.421820741514378
+                ],
+                [
+                    6.417685585297319,
+                    6.4392768562690685,
+                    6.438492646960379,
+                    6.430606857447369,
+                    6.431327085593844
+                ],
+                [
+                    6.500254713107911,
+                    6.579288095327138,
+                    6.441312063368271,
+                    6.4240635730052045,
+                    6.423100680821171
+                ],
+                [
+                    6.511629389583061,
+                    6.450637136063873,
+                    6.463701531142496,
+                    6.43361823946581,
+                    6.438077098677722
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "512"
+        },
+        "primaryMetric" : {
+            "score" : 32.749592864291095,
+            "scoreError" : 0.14719772130336214,
+            "scoreConfidence" : [
+                32.60239514298773,
+                32.89679058559446
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32.601536629707326,
+                "50.0" : 32.687515796819646,
+                "90.0" : 33.03627177220617,
+                "95.0" : 33.38432131791028,
+                "99.0" : 33.414895628139654,
+                "99.9" : 33.414895628139654,
+                "99.99" : 33.414895628139654,
+                "99.999" : 33.414895628139654,
+                "99.9999" : 33.414895628139654,
+                "100.0" : 33.414895628139654
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    32.65410718858784,
+                    32.687515796819646,
+                    32.67278840502163,
+                    32.76018030713851,
+                    32.68349450212984
+                ],
+                [
+                    32.79123760735124,
+                    33.414895628139654,
+                    32.70037358323991,
+                    32.672368539864216,
+                    32.67550391060851
+                ],
+                [
+                    32.62474130217778,
+                    32.76674364629087,
+                    32.74026705879566,
+                    32.61639181423145,
+                    32.601536629707326
+                ],
+                [
+                    32.62224902221999,
+                    32.62609148163364,
+                    32.61377953701436,
+                    32.718159894269625,
+                    32.698760443009284
+                ],
+                [
+                    32.736715375575166,
+                    33.31298126070839,
+                    32.68527937737457,
+                    32.85179877987136,
+                    32.811860515497045
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 241.0039086556916,
+            "scoreError" : 1.2546196942206869,
+            "scoreConfidence" : [
+                239.7492889614709,
+                242.25852834991227
+            ],
+            "scorePercentiles" : {
+                "0.0" : 239.94979839497796,
+                "50.0" : 240.46862832843348,
+                "90.0" : 244.10708432076035,
+                "95.0" : 246.3439439476879,
+                "99.0" : 246.74491219611744,
+                "99.9" : 246.74491219611744,
+                "99.99" : 246.74491219611744,
+                "99.999" : 246.74491219611744,
+                "99.9999" : 246.74491219611744,
+                "100.0" : 246.74491219611744
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    240.0451594618116,
+                    239.94979839497796,
+                    246.74491219611744,
+                    243.23957295592126,
+                    241.02870829568647
+                ],
+                [
+                    240.20769465474888,
+                    239.95611885728894,
+                    240.59460652981696,
+                    241.04855580627517,
+                    240.46862832843348
+                ],
+                [
+                    240.97394269699242,
+                    245.40835136801897,
+                    240.48752741679596,
+                    240.4803887264708,
+                    240.3120582788919
+                ],
+                [
+                    240.19066939359672,
+                    240.22947148323289,
+                    241.02959175158432,
+                    239.9877360866347,
+                    240.0938686965811
+                ],
+                [
+                    240.21207214516733,
+                    240.29625276172573,
+                    240.38971787812824,
+                    241.03666356612126,
+                    240.6856486612692
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "32768"
+        },
+        "primaryMetric" : {
+            "score" : 4107.90652267505,
+            "scoreError" : 15.01303370748262,
+            "scoreConfidence" : [
+                4092.8934889675675,
+                4122.919556382532
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4094.420424908485,
+                "50.0" : 4100.4318421300795,
+                "90.0" : 4142.537522487097,
+                "95.0" : 4169.802002039694,
+                "99.0" : 4171.5306906896385,
+                "99.9" : 4171.5306906896385,
+                "99.99" : 4171.5306906896385,
+                "99.999" : 4171.5306906896385,
+                "99.9999" : 4171.5306906896385,
+                "100.0" : 4171.5306906896385
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4100.4318421300795,
+                    4171.5306906896385,
+                    4096.243088826421,
+                    4102.642376298201,
+                    4111.915166915512
+                ],
+                [
+                    4097.615286196389,
+                    4101.719801453309,
+                    4110.160741023193,
+                    4103.853055733236,
+                    4094.420424908485
+                ],
+                [
+                    4095.9654750587697,
+                    4099.381035008583,
+                    4098.050822104204,
+                    4127.050274018612,
+                    4120.6226835330435
+                ],
+                [
+                    4112.012432489527,
+                    4165.768395189824,
+                    4096.705096310602,
+                    4098.448556956736,
+                    4105.53405028952
+                ],
+                [
+                    4095.4613823459463,
+                    4095.8370279579717,
+                    4098.866082310485,
+                    4102.697253454709,
+                    4094.730025673253
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 32790.61002657682,
+            "scoreError" : 126.76295464373773,
+            "scoreConfidence" : [
+                32663.84707193308,
+                32917.37298122056
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32639.498117663945,
+                "50.0" : 32716.961018661732,
+                "90.0" : 33165.84970901389,
+                "95.0" : 33185.24039470657,
+                "99.0" : 33189.08538430904,
+                "99.9" : 33189.08538430904,
+                "99.99" : 33189.08538430904,
+                "99.999" : 33189.08538430904,
+                "99.9999" : 33189.08538430904,
+                "100.0" : 33189.08538430904
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    32690.568434225446,
+                    32639.498117663945,
+                    32688.718259102432,
+                    32748.345985028755,
+                    32651.4438374404
+                ],
+                [
+                    33158.903680155934,
+                    33176.26875230082,
+                    32722.808079750568,
+                    32764.602600796417,
+                    32658.345601195993
+                ],
+                [
+                    32697.725742561313,
+                    32694.00988464644,
+                    32794.868086375645,
+                    32741.643727148043,
+                    32873.59690296889
+                ],
+                [
+                    32662.258407085425,
+                    32942.75334268627,
+                    32704.963672209615,
+                    32716.961018661732,
+                    32671.000764096603
+                ],
+                [
+                    32983.14607160166,
+                    33189.08538430904,
+                    32665.51579064217,
+                    32830.87668293131,
+                    32697.34183883555
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "2097152"
+        },
+        "primaryMetric" : {
+            "score" : 385067.69560015603,
+            "scoreError" : 4311.561004560344,
+            "scoreConfidence" : [
+                380756.1345955957,
+                389379.25660471636
+            ],
+            "scorePercentiles" : {
+                "0.0" : 377384.9213962264,
+                "50.0" : 383294.36593495,
+                "90.0" : 393361.94477697735,
+                "95.0" : 399229.43715725024,
+                "99.0" : 401257.8885547,
+                "99.9" : 401257.8885547,
+                "99.99" : 401257.8885547,
+                "99.999" : 401257.8885547,
+                "99.9999" : 401257.8885547,
+                "100.0" : 401257.8885547
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    384537.06426073256,
+                    380338.8958452123,
+                    383179.811963848,
+                    382450.758709036,
+                    377384.9213962264
+                ],
+                [
+                    388019.5462478185,
+                    392605.65203060623,
+                    391781.00681497727,
+                    401257.8885547,
+                    389905.5315252124
+                ],
+                [
+                    390425.3580627537,
+                    394496.38389653404,
+                    381930.8174600145,
+                    379472.031023628,
+                    380014.0956739717
+                ],
+                [
+                    383294.36593495,
+                    382642.2017745143,
+                    382808.31991119956,
+                    385781.80104873533,
+                    380322.33816094574
+                ],
+                [
+                    377445.9880036216,
+                    384819.8979270028,
+                    386436.1908385153,
+                    385309.2331715958,
+                    380032.28976754786
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "16777216"
+        },
+        "primaryMetric" : {
+            "score" : 3932941.844019604,
+            "scoreError" : 69122.06422063365,
+            "scoreConfidence" : [
+                3863819.77979897,
+                4002063.9082402377
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3768803.452354049,
+                "50.0" : 3954982.90513834,
+                "90.0" : 4053644.9125958486,
+                "95.0" : 4122587.4573898865,
+                "99.0" : 4146498.8433485287,
+                "99.9" : 4146498.8433485287,
+                "99.99" : 4146498.8433485287,
+                "99.999" : 4146498.8433485287,
+                "99.9999" : 4146498.8433485287,
+                "100.0" : 4146498.8433485287
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3914607.1753424658,
+                    3900727.2580896686,
+                    3768803.452354049,
+                    3816572.141930561,
+                    3797990.6072106264
+                ],
+                [
+                    3870212.830560928,
+                    3852678.1335642803,
+                    3844097.563580484,
+                    3830154.276693456,
+                    3804153.263498099
+                ],
+                [
+                    4066794.2234863876,
+                    3989495.8632376394,
+                    3988097.8644878436,
+                    3959446.0989315393,
+                    3972438.153632394
+                ],
+                [
+                    4146498.8433485287,
+                    3997007.9404714345,
+                    3983002.802228412,
+                    4044878.705335489,
+                    3949635.4125542836
+                ],
+                [
+                    3967776.7644726406,
+                    3991485.118914605,
+                    3980800.400954654,
+                    3954982.90513834,
+                    3931208.3004713277
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "main.ElementWiseMultiplicationNoSuperWord.vectors",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 5,
+        "jvm" : "/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-XX:-TieredCompilation",
+            "-Xms16g",
+            "--enable-preview",
+            "--add-modules=jdk.incubator.vector"
+        ],
+        "jdkVersion" : "21.0.4",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.4+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "arraySize" : "134217728"
+        },
+        "primaryMetric" : {
+            "score" : 3.668004438481751E7,
+            "scoreError" : 1781091.1251783974,
+            "scoreConfidence" : [
+                3.4898953259639114E7,
+                3.846113550999591E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.2719430284313727E7,
+                "50.0" : 3.602944289568345E7,
+                "90.0" : 4.0112262696260124E7,
+                "95.0" : 4.138530592157258E7,
+                "99.0" : 4.18104296875E7,
+                "99.9" : 4.18104296875E7,
+                "99.99" : 4.18104296875E7,
+                "99.999" : 4.18104296875E7,
+                "99.9999" : 4.18104296875E7,
+                "100.0" : 4.18104296875E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.337230903E7,
+                    3.481005078125E7,
+                    3.866370302316602E7,
+                    3.75254845505618E7,
+                    4.18104296875E7
+                ],
+                [
+                    4.039335046774194E7,
+                    3.5739763692857146E7,
+                    3.945129461811024E7,
+                    3.597129644444445E7,
+                    3.540177561837456E7
+                ],
+                [
+                    3.602944289568345E7,
+                    3.855917891221374E7,
+                    3.553453339007092E7,
+                    3.9912424302788846E7,
+                    3.992487084860558E7
+                ],
+                [
+                    3.720984727509294E7,
+                    3.686883747058824E7,
+                    3.378789534343434E7,
+                    3.54731082155477E7,
+                    3.518041403508772E7
+                ],
+                [
+                    3.474626866319445E7,
+                    3.417327332423208E7,
+                    3.604246822302158E7,
+                    3.2719430284313727E7,
+                    3.7699658522556394E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

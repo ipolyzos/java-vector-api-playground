@@ -72,6 +72,17 @@ To run the benchmarks, use the following commands:
 - MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - All Benchmarks: ```$ make run-all```
 
+## Benchmark Results
+
+All the benchmarks presented below were run on the same machine with the same specifications as presented in the specific benchmark `README.md` file. 
+
+The results visualized  using the [JMH Visualizer](https://jmh.morethan.io/) and they are the average time taken by the benchmarks to execute. Finaly the warmup and the actual benchmarks were run multiple times (5) to ensure the accuracy of the results and they are stored in the `results` directory as `.json` files which are ignored from git by default as they are auto-generated (also lost with cleanup).
+
+Here is a list of the benchmarks we have executed so far:
+
+- [14/09/2024 - MacBook Air M2](benchmark/20240914-macbook-air-m2/README.md) 
+- [18/09/2024 - MacBook Pro M1](benchmark/20240918-macbook-pro-m1/README.md)
+
 ## References
 
 - [Java Vector API - JEP-338 - (Incubator, JDK 16)](https://openjdk.java.net/jeps/338) 
