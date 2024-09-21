@@ -76,5 +76,13 @@ run-vector-addition: package
 run-vector-addition-no-super-word: package
 	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.VectorAdditionNoSuperWord
 
+# Run the Sorting
+run-sorting: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.Sorting
+
+# Run the SortingNoSuperWord
+run-sorting-no-super-word: package
+	java --enable-preview --add-modules=jdk.incubator.vector -cp target/vectors.jar main.SortingNoSuperWord
+
 # Run all the programs
-run-all: run-array-stats run-array-stats-no-super-word run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication run-vector-addition run-vector-addition-no-super-word run-element-wise-multiplication run-element-wise-multiplication-no-super-word
+run-all: run-array-stats run-array-stats-no-super-word run-complex-expression run-complex-expression-no-super-word run-simple-sum run-simple-sum-no-super-word run-dot-product run-dot-product-no-super-word run-matrix-multiplication run-vector-addition run-vector-addition-no-super-word run-element-wise-multiplication run-element-wise-multiplication-no-super-word run-sorting run-sorting-no-super-word
