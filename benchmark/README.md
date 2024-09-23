@@ -91,6 +91,9 @@ The benchmarks in this project examine the performance of various mathematical a
 16. **SortingNoSuperWord**:
     - Similar to `Sorting`, but without the SuperWord optimization.
 
+_NOTE_:
+- _SuperWord optimization enhances performance by leveraging SIMD instructions to process multiple data elements in parallel. This results in significant performance gains for operations that can be vectorized, as observed in the benchmark results for operations like dot product, element-wise multiplication, and matrix multiplication. However, the effectiveness of this optimization can vary depending on the complexity and nature of the operations._
+
 ## Results
 
 Below is a list of benchmark runs. Each benchmark run targets specific hardware and setup, as detailed in the dedicated subfolders for each run:
