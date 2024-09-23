@@ -99,4 +99,5 @@ _NOTE_:
 Below is a list of benchmark runs. Each benchmark run targets specific hardware and setup, as detailed in the dedicated subfolders for each run:
 - [14/09/2024 - MacBook Air M2](20240914-macbook-air-m2/README.md)
 - [18/09/2024 - MacBook Pro M1](20240918-macbook-pro-m1/README.md)
+- [20/09/2024 - Dell Precision 7530](20240920-dell-precision-7530/README.md)
 

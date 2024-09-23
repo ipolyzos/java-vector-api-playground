@@ -81,7 +81,8 @@ The results visualized  using the [JMH Visualizer](https://jmh.morethan.io/) and
 Here is a list of the benchmarks we have executed so far:
 
 - [14/09/2024 - MacBook Air M2](benchmark/20240914-macbook-air-m2/README.md) 
-- [18/09/2024 - MacBook Pro M1](benchmark/20240918-macbook-pro-m1/README.md)
+- [18/09/2024 - MacBook Pro M1](benchmark/20240918-macbook-pro-m1/README.md) 
+- [20/09/2024 - Dell Precision 7530](benchmark/20240920-dell-precision-7530/README.md)
 
 ## References
 
