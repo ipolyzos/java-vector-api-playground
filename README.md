@@ -104,6 +104,10 @@ Here is a list of the benchmarks we have executed so far:
 - [Design of a custom vector operation API exploiting SIMD intrinsics within Java](https://ieeexplore.ieee.org/abstract/document/5575190)
 - [Vectorization for Java](https://link.springer.com/chapter/10.1007/978-3-642-15672-4_3)
 
+## Contributions
+
+We welcome contributions to the _Java Vector API Playground_ project! If you are interested in contributing, please read our [CONTRIBUTIONS](CONTRIBUTIONS.md) guide for detailed instructions on how to get started. Please also adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) in all your interactions with the project.
+
 ## License
 
 This project is licensed under the _MIT License_ - see the [LICENSE](LICENSE) file for details.
