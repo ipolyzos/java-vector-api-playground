@@ -66,8 +66,10 @@ To run the benchmarks, use the following commands:
 - MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - SimpleSum: ```$ make run-simple-sum```
 - SimpleSumNoSuperWord: ```$make run-simple-sum-no-super-word```
-- DotProduct: ```$ make run-dot-product```
-- DotProductNoSuperWord: ```$ make run-dot-product-no-super-word```
+- Sorting: ```$ make run-sorting```
+- SortingNoSuperWord: ```$ make run-sorting-no-super-word```
+- VectorAddition: ```make run-vector-addition```
+- VectorAdditionNoSuperWord: ```make run-vector-addition-no-super-word```
 - MatrixMultiplication: ```$ make run-matrix-multiplication```
 - MatrixMultiplicationNoSuperWord: ```$ make run-matrix-multiplication-no-super-word```
 - All Benchmarks: ```$ make run-all```
