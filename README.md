@@ -105,6 +105,7 @@ Here is a list of the benchmarks we have executed so far:
 - [Java Vector API: Benchmarking and Performance Analysis](https://dl.acm.org/doi/abs/10.1145/3578360.3580265)
 - [Design of a custom vector operation API exploiting SIMD intrinsics within Java](https://ieeexplore.ieee.org/abstract/document/5575190)
 - [Vectorization for Java](https://link.springer.com/chapter/10.1007/978-3-642-15672-4_3)
+- [JEP 315: Improve Aarch64 Intrinsics](https://bugs.openjdk.org/browse/JDK-8189104)
 
 ## Contributions
 
